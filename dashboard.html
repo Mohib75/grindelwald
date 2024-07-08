@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Dashboard</title>
+</head>
+
+<body class="bg-[#101010] flex gap-4 w-full poppins-font">
+    <main class="max-w-[1440px] w-full mx-auto flex justify-between">
+        <!-- sidebar -->
+        <section class="w-[20%] flex gap-20 flex-col mt-20">
+            <div class=" flex flex-col gap-4">
+                <div class="w-[72px] h-[72px] rounded-xl bg-[url('./Assets/Images/profile.png')]"></div>
+                <h2 class="text-white text-3xl font-semibold leading-9">Samantha</h2>
+                <p class="text-white leading-7 opacity-60">samantha@email.com</p>
+            </div>
+
+            <div class="flex flex-col gap-12">
+                <a class="text-white text-2xl font-semibold leading-9 opacity-50" href="">Dashboard</a>
+                <a class="text-white text-2xl font-semibold leading-9" href="">Expenses</a>
+                <a class="text-white text-2xl font-semibold leading-9 opacity-50" href="">Wallets</a>
+                <a class="text-white text-2xl font-semibold leading-9 opacity-50" href="">Summary</a>
+                <a class="text-white text-2xl font-semibold leading-9 opacity-50" href="">Accounts</a>
+                <a class="text-white text-2xl font-semibold leading-9 opacity-50" href="">Settings</a>
+            </div>
+        </section>
+
+        <!-- main content -->
+        <section class="w-[75%] bg-white flex justify-between gap-4 rounded-2xl mt-8 rounded-tr-2xl">
+            <!-- left side -->
+            <div class="flex flex-col gap-12 w-[60%] pt-12 pl-16 pb-12">
+                <div class="flex justify-between">
+                    <div class="flex flex-col gap-4">
+                        <h1 class="text-[#262A41] text-[40px] font-semibold leading-[50px] ">Expenses</h1>
+                        <p class="text-[#101010] opacity-50">01 - 25 March, 2020</p>
+                    </div>
+
+                    <div class="flex items-center">
+                        <div class="bg-[url('./Assets/Images/avatar-1.png')] w-8 h-8 rounded-full z-30"></div>
+                        <div
+                            class="bg-[url('./Assets/Images/avatar-2.png')] w-8 h-8 rounded-full relative right-2 z-20">
+                        </div>
+                        <div
+                            class="bg-[url('./Assets/Images/avatar-3.png')] w-8 h-8 rounded-full right-4 relative z-10">
+                        </div>
+                        <img class="object-cover" src="./Assets/Svg/plus.svg" alt="">
+                    </div>
+                </div>
+
+                <img class="object-cover" src="./Assets/Svg/Stats.svg" alt="">
+
+                <p class="text-[#262A41] text-lg leading-7 avenir-font font-semibold">Today</p>
+
+                <div class="flex flex-col gap-8">
+                    <div class="flex justify-between">
+                        <div class="flex gap-4">
+                            <img src="./Assets/Svg/cart.svg" alt="">
+                            <div class="flex flex-col">
+                                <p class="text-[#262A41] font-medium">Grocery</p>
+                                <p class="text-[#404852] text-sm opacity-50">5:12 pm • Belanja di pasar</p>
+                            </div>
+                        </div>
+
+                        <p class="text-[#273240] font-semibold">-326.800</p>
+                    </div>
+
+                    <div class="flex justify-between">
+                        <div class="flex gap-4">
+                            <img src="./Assets/Svg/bus.svg" alt="">
+                            <div class="flex flex-col">
+                                <p class="text-[#262A41] font-medium">Transportation</p>
+                                <p class="text-[#404852] text-sm opacity-50">5:12 pm • Naik bus umum</p>
+                            </div>
+                        </div>
+
+                        <p class="text-[#273240] font-semibold">-15.000</p>
+                    </div>
+
+                    <div class="flex justify-between">
+                        <div class="flex gap-4">
+                            <img src="./Assets/Svg/house.svg" alt="">
+                            <div class="flex flex-col">
+                                <p class="text-[#262A41] font-medium">Housing</p>
+                                <p class="text-[#404852] text-sm opacity-50">5:12 pm • Bayar Listrik</p>
+                            </div>
+                        </div>
+
+                        <p class="text-[#273240] font-semibold">-185.750</p>
+                    </div>
+                </div>
+
+                <p class="text-[#262A41] text-lg leading-7 avenir-font font-semibold">Monday, 23 March 2020</p>
+
+                <div class="flex flex-col gap-8">
+                    <div class="flex justify-between">
+                        <div class="flex gap-4">
+                            <img src="./Assets/Svg/food.svg" alt="">
+                            <div class="flex flex-col">
+                                <p class="text-[#262A41] font-medium">Food and Drink</p>
+                                <p class="text-[#404852] text-sm opacity-50">5:12 pm • Makan Steak</p>
+                            </div>
+                        </div>
+
+                        <p class="text-[#273240] font-semibold">-156.000</p>
+                    </div>
+
+                    <div class="flex justify-between">
+                        <div class="flex gap-4">
+                            <img src="./Assets/Svg/entertainment.svg" alt="">
+                            <div class="flex flex-col">
+                                <p class="text-[#262A41] font-medium">Entertainment</p>
+                                <p class="text-[#404852] text-sm opacity-50">5:12 pm • Nonton Bioskop</p>
+                            </div>
+                        </div>
+
+                        <p class="text-[#273240] font-semibold">-35.200</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- right side -->
+            <div class="bg-[#F9FAFC] flex flex-col gap-12 px-8 pt-16 pb-12 w-[30%] rounded-tr-2xl rounded-br-2xl">
+                <p class="text-[#262A41] text-xl leading-7 avenir-font font-semibold">Where your money go?</p>
+
+                <div class="flex flex-col gap-8">
+                    <div class="flex flex-col">
+                        <div class="flex justify-between items-center">
+                            <p class="text-[#273240] text-xs font-medium leading-8">Food and Drinks</p>
+                            <p class="text-[#273240] text-xs font-medium leading-8">872.400</p>
+                        </div>
+
+                        <div class="w-full bg-[#ECEFF5] rounded-full h-[5px] overflow-hidden">
+                            <div class="bg-[#31BA96] h-full text-center rounded-full w-[30%]"></div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col">
+                        <div class="flex justify-between items-center">
+                            <p class="text-[#273240] text-xs font-medium leading-8">Shopping</p>
+                            <p class="text-[#273240] text-xs font-medium leading-8">1.378.200</p>
+                        </div>
+
+                        <div class="w-full bg-[#ECEFF5] rounded-full h-[5px] overflow-hidden">
+                            <div class="bg-[#31BA96] h-full text-center rounded-full w-[50%]"></div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col">
+                        <div class="flex justify-between items-center">
+                            <p class="text-[#273240] text-xs font-medium leading-8">Housing</p>
+                            <p class="text-[#273240] text-xs font-medium leading-8">928.500</p>
+                        </div>
+
+                        <div class="w-full bg-[#ECEFF5] rounded-full h-[5px] overflow-hidden">
+                            <div class="bg-[#31BA96] h-full text-center rounded-full w-[40%]"></div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col">
+                        <div class="flex justify-between items-center">
+                            <p class="text-[#273240] text-xs font-medium leading-8">Transportation</p>
+                            <p class="text-[#273240] text-xs font-medium leading-8">420.700</p>
+                        </div>
+
+                        <div class="w-full bg-[#ECEFF5] rounded-full h-[5px] overflow-hidden">
+                            <div class="bg-[#31BA96] h-full text-center rounded-full w-[20%]"></div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col">
+                        <div class="flex justify-between items-center">
+                            <p class="text-[#273240] text-xs font-medium leading-8">Vehicle</p>
+                            <p class="text-[#273240] text-xs font-medium leading-8">520.000</p>
+                        </div>
+
+                        <div class="w-full bg-[#ECEFF5] rounded-full h-[5px] overflow-hidden">
+                            <div class="bg-[#31BA96] h-full text-center rounded-full w-[30%]"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full bg-[#EDF0F6] p-4 flex flex-col justify-center gap-6 rounded-xl relative">
+                    <p class="text-[#273240] font-semibold mt-16">Save more money</p>
+                    <p class="text-[#404852] text-xs leading-5">eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim.</p>
+
+                    <button class="bg-[#101010] rounded-xl w-full text-white text-xs font-semibold p-4">VIEW
+                        TIPS</button>
+
+                    <img class="absolute -top-4" src="./Assets/Svg/box.svg" alt="">
+                    <img class="absolute -top-8 right-4" src="./Assets/Svg/flower.svg" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
